@@ -1,0 +1,18 @@
+{% raw %}
+<script id="pf-bread" type="text/x-handlebars-template">
+  <div>
+    <ul class="crumb">
+      <li class="crumb"><a href="/portfolio.html" data-nav>portfolio</a></li>
+      <li class="crumb"><span> / </span></li>
+      <li class="crumb-title">{{work.name}}</li>
+      <li class="crumb-tags">
+      {{#each work.tags}}
+      <span class="tag">{{this}}</span>
+      {{/each}}
+      </li>
+    </ul>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="pf-long-desc"><p>{{{work.long_desc}}}</p></div>
+</script>
+{% endraw %}

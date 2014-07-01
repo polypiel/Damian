@@ -1,0 +1,5 @@
+.sass-cache/
+_build/
+*.sublime-*
+resources/
+backups/

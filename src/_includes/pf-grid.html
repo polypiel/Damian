@@ -1,0 +1,17 @@
+{% raw %}
+<script id="pf-grid" type="text/x-handlebars-template">
+  {{#each works}}
+    <div class="pf-box">
+      <a href="{{url}}" data-nav title="{{desc}}">
+        <img class="portfolio-thumb" src="/images/{{thumb}}" alt="Project picture" />
+      </a>
+      <br/>
+      <a href="{{url}}" data-nav title="{{desc}}">{{name}}</a>
+      <br/>
+      {{#each tags}}
+        <span class="tag" title="{{this}}">{{shortTag this}}</span>
+      {{/each}}
+    </div>
+  {{/each}}
+</script>
+{% endraw %}
